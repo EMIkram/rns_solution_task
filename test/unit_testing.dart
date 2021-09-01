@@ -11,7 +11,7 @@ import 'package:rns_task/modals/brewery_modal.dart';
 import 'package:rns_task/services/http_service.dart';
 
 void main() {
-  test('any',() async {
+  test('testing some runtime types of data coming from API ',() async {
     List<BreweryModal> modalList = await HttpService.getBreweryList();
     modalList.forEach((element) {
       expect(element.name.runtimeType,String);
